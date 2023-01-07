@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "astro": "^1.9.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.48.0"
   }
 }
