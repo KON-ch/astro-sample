@@ -1,0 +1,25 @@
+.header {
+  background-image: var(--accent-gradient);
+  max-width: 60ch;
+  margin: auto;
+}
+
+.nav {
+  min-height: 3rem;
+  display: flex;
+}
+
+.ul {
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+}
+
+.li {
+  grid-row: 1;
+}
+
+.link {
+  color: #111;
+  text-decoration: none;
+}
