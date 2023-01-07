@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+const pageTitle = "About Page"
 ---
 
-<Layout title="About Page">
+<Layout title={pageTitle}>
   <main>
     <section>
-      <h1><span class="text-gradient">About Page</span></h1>
+      <h1><span class="text-gradient">{pageTitle}</span></h1>
     </section>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
