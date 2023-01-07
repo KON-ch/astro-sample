@@ -1,5 +1,6 @@
 ---
 import { Header } from "../components/Header";
+import { Navigation } from "../components/Navigation";
 import "../styles/global.css";
 
 export interface Props {
@@ -19,7 +20,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Header />
+    <Header>
+      <Navigation />
+    </Header>
     <slot />
   </body>
 </html>
