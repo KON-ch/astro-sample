@@ -1,0 +1,19 @@
+---
+const repositoryName = "KON-ch/astro-sample";
+const url = `https://github.com/${repositoryName}`;
+const icon = "/github-mark/github-mark.svg";
+---
+
+<a href={url}>
+  <img src={icon} />
+  {repositoryName}
+</a>
+<style>
+  a {
+    text-decoration: none;
+    color: var(--accent);
+  }
+  img {
+    height: 2em;
+  }
+</style>
