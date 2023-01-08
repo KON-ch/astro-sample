@@ -6,6 +6,7 @@
     #00ff66 30%,
     #e1ff00
   );
+  --page-max-width: 60ch;
 }
 
 html {
