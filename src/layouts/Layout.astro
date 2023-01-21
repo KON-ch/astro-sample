@@ -1,0 +1,35 @@
+---
+import Footer from "../components/Footer.astro";
+import Hamburger from "../components/Hamburger.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script>
+      import "../scripts/menu"
+    </script>
+  </head>
+  <body>
+    <Header>
+      <Navigation />
+      <Hamburger />
+    </Header>
+    <slot />
+    <Footer />
+  </body>
+</html>

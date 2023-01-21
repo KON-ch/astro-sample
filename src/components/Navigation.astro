@@ -1,0 +1,44 @@
+---
+import type { PageLink } from "../types/Link";
+
+const items: PageLink[] = [
+  { text: "top", href: "/" },
+  { text: "about", href: "/about" },
+];
+---
+
+<nav>
+  <ul role="list">
+    {
+      items.map((item) => {
+        return (
+          <li>
+            <a href={item.href} class={item.text}>{item.text}</a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
+
+<style>
+  nav {
+    min-height: 3rem;
+    display: flex;
+  }
+
+  ul {
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+  }
+
+  li {
+    grid-row: 1;
+  }
+
+  a {
+    color: #111;
+    text-decoration: none;
+  }
+</style>

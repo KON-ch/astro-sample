@@ -1,0 +1,28 @@
+:root {
+  --accent: #ffd000;
+  --accent-gradient: linear-gradient(
+    to left,
+    var(--accent),
+    #00ff66 30%,
+    #e1ff00
+  );
+  --page-max-width: 60ch;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  background-color: #f6f6f6;
+}
+
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.hamburger {
+  display: none;
+}
+
+.expanded {
+  display: unset;
+}
