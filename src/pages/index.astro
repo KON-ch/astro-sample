@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
+import Greeting from '../components/Greeting';
+
 const pageTitle = "Top Page";
 ---
 
@@ -9,6 +11,8 @@ const pageTitle = "Top Page";
   <main>
     <section>
       <h1><span class="text-gradient">{pageTitle}</span></h1>
+      <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+      <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
     </section>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
