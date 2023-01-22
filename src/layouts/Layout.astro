@@ -3,6 +3,7 @@ import Footer from "../components/Footer.astro";
 import Hamburger from "../components/Hamburger.astro";
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
+import ThemeIcon from '../components/ThemeIcon.astro';
 import "../styles/global.css";
 
 export interface Props {
@@ -28,6 +29,7 @@ const { title } = Astro.props;
     <Header>
       <Navigation />
       <Hamburger />
+      <ThemeIcon />
     </Header>
     <slot />
     <Footer />
