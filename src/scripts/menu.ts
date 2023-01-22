@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const target = document.querySelector("h1")
+  const target = document.querySelector(".hamburger")
 
   if (!target) return;
 
   target.addEventListener("click", () => {
-    document.querySelector('.hamburger')?.classList.toggle('expanded');
+    document.querySelector('.nav-links')?.classList.toggle('expanded');
   })
 })
